@@ -1,0 +1,1 @@
+CF::Application.config.secret_key_base = '96cc5644d4dd98e369e1fb794a23a46306958219cd6c880cef4b33db9fad1d2231971468ad2394ea60694787062d7cbb8e617bc863d96ef4ac83aea89f202728' # replace this
