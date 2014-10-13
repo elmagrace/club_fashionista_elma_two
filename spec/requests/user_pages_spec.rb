@@ -108,9 +108,9 @@ describe "User pages" do
 
     describe "with valid information" do
       before do
-        fill_in "Name",         with: "Example User"
+        fill_in "Name",        with: "Example User"
         fill_in "Email",        with: "user@example.com"
-        fill_in "Password",     with: "foobar"
+        fill_in "Password",    with: "foobar"
         fill_in "Confirmation", with: "foobar"
       end
 
@@ -146,9 +146,9 @@ describe "User pages" do
       let(:new_name)  { "New Name" }
       let(:new_email) { "new@example.com" }
       before do
-        fill_in "Name",             with: new_name
+        fill_in "Name",            with: new_name
         fill_in "Email",            with: new_email
-        fill_in "Password",         with: user.password
+        fill_in "Password",        with: user.password
         fill_in "Confirm Password", with: user.password
         click_button "Save changes"
       end
@@ -159,7 +159,7 @@ describe "User pages" do
       specify { expect(user.reload.name).to  eq new_name }
       specify { expect(user.reload.email).to eq new_email }
     end
-  end 
+  end
 
   describe "following/followers" do
     let(:user) { FactoryGirl.create(:user) }
